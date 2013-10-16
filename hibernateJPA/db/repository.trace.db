@@ -1,0 +1,24 @@
+10-16 11:24:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "DOKUMENT" nie istnieje
+Table "DOKUMENT" not found; SQL statement:
+
+    alter table PUBLIC.Dokument 
+        drop constraint FK_2s45j6m4mlhy8v8bi0chqbkk8 [42102-173]
+10-16 11:24:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "DOKUMENT" nie istnieje
+Table "DOKUMENT" not found; SQL statement:
+
+    alter table PUBLIC.Dokument 
+        drop constraint FK_h0mwd2fewnpidyxc3o895cyqj [42102-173]
+10-16 11:24:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "POZYCJADOKUMENTU" nie istnieje
+Table "POZYCJADOKUMENTU" not found; SQL statement:
+
+    alter table PUBLIC.PozycjaDokumentu 
+        drop constraint FK_dj3ad3sjjh5j5000889h7u31r [42102-173]
+10-16 11:24:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Tablela "POZYCJADOKUMENTU" nie istnieje
+Table "POZYCJADOKUMENTU" not found; SQL statement:
+
+    alter table PUBLIC.PozycjaDokumentu 
+        drop constraint FK_rxnhvg38u81l9lckvvbwnn8ho [42102-173]
