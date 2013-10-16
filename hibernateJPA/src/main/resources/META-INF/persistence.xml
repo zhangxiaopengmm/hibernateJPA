@@ -7,8 +7,14 @@
 	<persistence-unit name="manager1" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-		<class>pl.mirco.model.Person</class>
 		<class>pl.mirco.model.StawkaVAT</class>
+		<class>pl.mirco.model.Dokument</class>
+		<class>pl.mirco.model.JednostkaMiary</class>
+		<class>pl.mirco.model.Kontrahent</class>
+		<class>pl.mirco.model.PozycjaDokumentu</class>
+		<class>pl.mirco.model.Typdokumentu</class>
+		<class>pl.mirco.model.Uzytkownik</class>
+		
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />

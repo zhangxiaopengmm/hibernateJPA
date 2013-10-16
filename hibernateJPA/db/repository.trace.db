@@ -22,3 +22,31 @@ Table "POZYCJADOKUMENTU" not found; SQL statement:
 
     alter table PUBLIC.PozycjaDokumentu 
         drop constraint FK_rxnhvg38u81l9lckvvbwnn8ho [42102-173]
+10-16 11:45:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Ograniczenie "FK_KV4P1APR6XOG9CSC5FERQKPIX" nie istnieje
+Constraint "FK_KV4P1APR6XOG9CSC5FERQKPIX" not found; SQL statement:
+
+    alter table PUBLIC.Person 
+        drop constraint FK_kv4p1apr6xog9csc5ferqkpix [90057-173]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:331)
+	at org.h2.message.DbException.get(DbException.java:171)
+	at org.h2.message.DbException.get(DbException.java:148)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:235)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:128)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:113)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:501)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.<init>(EntityManagerFactoryImpl.java:96)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:914)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:899)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:59)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:63)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:47)
+	at pl.mirco.hibernateJPA.App.main(App.java:19)

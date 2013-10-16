@@ -1,9 +1,13 @@
+/**
+ * Klasa przykładowa - do susunięcia
+ */
 package pl.mirco.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Person {
@@ -18,8 +22,8 @@ public class Person {
     private String city;
     private String zipCode;
     private String phoneNumber;
-   /* @ManyToOne
-    private Person boss;*/
+    @ManyToOne
+    private Person boss;
 
     public Long getId() {
         return id;
