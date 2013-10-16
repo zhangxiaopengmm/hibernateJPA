@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import pl.mirco.model.Person;
+import pl.mirco.model.Uzytkownik;
 
 /**
  * Hibernate JPA
@@ -19,8 +19,12 @@ public class App
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("manager1");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
-        entityManager.persist( new Person());
-        entityManager.persist( new Person());
+        Uzytkownik user = new Uzytkownik();
+        user.setLogin("miro");
+        entityManager.persist(user);
+        user = new Uzytkownik();
+        user.setLogin("Mirek");
+        entityManager.persist(user);
         entityManager.getTransaction().commit();
         entityManager.close();
     }

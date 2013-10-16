@@ -2,6 +2,7 @@ package pl.mirco.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -23,6 +24,7 @@ public class Uzytkownik implements Serializable {
 
     @NotNull
     @Size(min = 2, max = 24)
+    @Column(nullable = false)
 	private String login;
 	private String haslo;
 	@Size(min = 1, max = 256)
